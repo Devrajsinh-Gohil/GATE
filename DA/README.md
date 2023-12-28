@@ -8,12 +8,7 @@
 Topics:
 - [Probability and Statistics](#probability-and-statistics)
 
-# Probability and Statistics:
-
-Topics:
-- [Counting (Permutations and Combinations)](#counting-permutations-and-combinations)
-
-- [Probability Axioms](#probability-axioms)
+## Probability and Statistics:
 
 ### Counting (Permutations and Combinations)
 
@@ -80,4 +75,6 @@ $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 #### Theorem 6 (Boole's inequality): *for the events $A_1,A_2,...,A_n$ :*
 
 $$P(A_1\cup A_2\cup ... \cup A_n) \leq \sum_{i=1\text{ to }n} P(A_i)$$
+
+#### De
 
