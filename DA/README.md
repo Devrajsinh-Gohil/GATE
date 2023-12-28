@@ -7,6 +7,7 @@
 
 Topics:
 - [Probability and Statistics](#probability-and-statistics)
+- [Probability and Statistics](#probability-and-statistics)
 
 # Probability and Statistics:
 
