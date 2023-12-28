@@ -38,8 +38,8 @@ To calculate permutations and combinations, you can use the following formulas:
 
             $A_i \cap A_j = \emptyset , \quad \text{for} \quad i \neq j , \quad \text{and} \quad i , j = 1 , 2 , \ldots ,$
 
-        - such that $A = \bigcup_{i=1}^{\infty} A_i$, then:
+        - such that $A = \bigcup_{i=1 \text{ to } \infty} A_i$, then:
 
-            $P(A) = P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$
+            $P(A) = P\left(\bigcup_{i=1 \text{ to } \infty} A_i\right) = \sum_{i=1 \text{ to } \infty} P(A_i)$
 
 > These three `Axioms` are building blocks of other properties of Pobability.
