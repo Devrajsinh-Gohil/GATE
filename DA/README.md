@@ -6,13 +6,13 @@
 - [Gate Syllabus](https://gate2024.iisc.ac.in/wp-content/uploads/2023/08/GATE2024DataScienceAIsyllabus.pdf)
 
 Topics:
-- [Probability and Statistics](##Probability-and-Statistics:)
+- [Probability and Statistics](#probability-and-statistics)
 
 # Probability and Statistics:
 
 Topics:
-- [Counting](###Counting-(Permutations-and-Combinations))
-- [Probability Axiom](###Probability-Axiom)
+- [Counting](#counting--permutations-and-combinations)
+- [Probability Axiom](#probability-axiom)
 
 ### Counting (Permutations and Combinations)
 
