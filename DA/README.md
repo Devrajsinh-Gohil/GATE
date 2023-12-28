@@ -43,8 +43,3 @@ To calculate permutations and combinations, you can use the following formulas:
             $P(A) = P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$
 
 > These three `Axioms` are building blocks of other properties of Pobability.
-
-
-
-
-
