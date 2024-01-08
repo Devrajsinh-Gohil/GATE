@@ -6,9 +6,10 @@
 - [Gate Syllabus](https://gate2024.iisc.ac.in/wp-content/uploads/2023/08/GATE2024DataScienceAIsyllabus.pdf)
 
 Topics:
-- [Probability and Statistics](#probability-and-statistics)
+- [Probability](#probability)
+- [Statistics](#statistics)
 
-## Probability and Statistics:
+## Probability
 
 ### Counting (Permutations and Combinations)
 
@@ -49,6 +50,8 @@ To calculate permutations and combinations, you can use the following formulas:
 
 > These three `Axioms` are building blocks of other properties of Pobability.
 
+### Theorems
+
 #### Theorem 1 (Probability of Empty Set): *Probability of an Empty Set is 0*
 
 $$P(\emptyset) = 0$$
@@ -78,6 +81,8 @@ $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 
 $$P(A_1\cup A_2\cup ... \cup A_n) \leq \sum_{i=1\text{ to }n} P(A_i)$$
 
+### Laws
+
 #### De Morgan's Law
 
 $$
@@ -88,8 +93,82 @@ $$
 $$
 
 
-### Conditional Probability:
+#### Conditional Probability:
 **let A and B be two events, then probability of event A given event B is denoted by $P(A | B)$ :**
 
 $$P(A|B) = \frac{P(A\cap B)}{P(B)},\text{ for }P(B) > 0$$
 
+#### Independence:
+
+Two events A and B are independent if occurence of one event has no effect on the probability of other event. Thus,
+
+$$ P(A|B) = P(A) $$
+
+equivalently,
+$$ P(B|A) = P(B) $$
+
+*`Derivation`* 
+
+$$ P(A|B) = P(A)$$
+$$P(A|B) = \frac{P(A\cap B)}{P(B)}$$
+$$P(A) = \frac{P(A\cap B)}{P(B)}$$
+$$P(A\cap B)= P(A)*P(B)$$
+
+
+#### Total Probabilities
+
+let $B_1,B_2,...,B_k,...,B_n$ be mutually disjoint events, satisfying $S=\bigcup_{i=1}^{n}B_i\text{, and }P(B_i)>0$ for every i = 1,2,...,n then for every A we have that:
+
+$$P(A) = \sum_{i=1}^{n}P(A|B_i) P(B_i)$$
+
+>Let B satisfy 0 < P(B) < 1;  then for evey event A:
+>$$P(A) = P(A|B) P(B) + P(A|B^c) P(B^c)$$
+
+#### Bayes’ Theorem
+
+let $B_1,B_2,...,B_k,...,B_n$ be mutually disjoint events, satisfying $S=\bigcup_{i=1}^{n}B_i\text{, and }P(B_i)>0$ for every i = 1,2,...,n then for every event A for which P(A)>0, we have:
+
+$$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i) P(B_i)}$$
+
+>Note: this implies
+>$$P(A|B) P(B) = P(B|A) P(A)$$
+
+
+## Statistics
+
+### Expectation and variance
+
+#### Expectaions
+
+The **mean**, **expected value** or **expectation** of a random variable X is written as E(X) or $\mu_x$. If we observe N random values of X, then mean of N values will be approximately equal to E(X) for large N.
+
+> It is defined differently for continuous and discrete random variables.
+
+*Defination for continuous*: Let X be a **`continiuous`** random variable with p.d.f $f_X(x)$. The expected value of X is:
+
+$$E(X) = \int_{-\infty}^{\infty}x.f_X(x)dx$$
+
+*Defination for discrete*: Let X be **`discrete`** random variable with probability function $f_X(x)$. The expected value of X is:
+
+$$E(X) = \sum_x xf_X(x) = \sum_xxP(X=x)$$
+
+
+> Similarly `Expectation of g(X)` we define `E(g(x))` <br>
+> Continuous:
+> $$E(g(X)) = \int_{-\infty}^{\infty}g(x).f_X(x)dx$$
+> Discrete:
+> $$E(g(X)) = \sum_x g(x)f_X(x) = \sum_xg(x)P(X=x)$$
+
+**Expextation of E(XY)**
+
+Suppose random variables X and Y are dependent on each other, and observing number of pairs $(x_1,y_1),(x_2,y_2),...,(x_N,y_N)$. As X and Y are dependent value of $x_i$ might affect $y_i$ and vice-versa.
+
+As number of pairs N tends to infinity the average:
+
+$$\frac{1}{N}\sum_{i=1}^Nx_i\text{ x }y_i$$
+
+approaches to expectation E(XY).
+
+#### Properties of Expectation
+
+To Be Continued......
