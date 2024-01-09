@@ -8,7 +8,7 @@ Topics:
 - [Probability](#probability)
 - [Statistics](#statistics)
 
-## Probability
+# Probability
 
 ### Counting (Permutations and Combinations)
 
@@ -131,11 +131,11 @@ $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i) P(B_i)}$$
 >Note: this implies
 >$$P(A|B) P(B) = P(B|A) P(A)$$
 
-## Statistics
+#Statistics
 
-### Expectation and variance
+# Expectation and variance
 
-#### Expectaions
+## Expectaions
 
 The **mean**, **expected value** or **expectation** of a random variable X is written as E(X) or $\mu_x$. If we observe N random values of X, then mean of N values will be approximately equal to E(X) for large N.
 
@@ -199,12 +199,65 @@ $$I_A = \begin{cases}
 
 Then $I_A$ is a random variable, and 
 
-$$E(I_A) = \sum_{r=0}^{1}rP(I_A = r) \\ = 0 * P(I_A = 0) + 1 * P(I_A = 1) = P(I_A = 1) = P(A)
+$$E(I_A) = \sum_{r=0}^{1}rP(I_A = r) \\ 
+= 0 * P(I_A = 0) + 1 * P(I_A = 1) = P(I_A = 1) = P(A)
 $$
 
 Therefore,
 
-$P(A) = E[I_A]$ for any event A
+$P(A) = E(I_A)$ for any event A
 
+
+## Variance, covariance and correlaiton
+
+### Variance
+
+THe defoantion of variance for random variable X is a measure how spread out it is. Are vlues of X clustered tightly around the mean, or can be commonly observe values of X a long way from mean value? The *varicance* measures how far is the values of X are from mean, on average.
+
+*Defination*: Let X be a random variable. The **variance ** of X is:
+
+$$Var(X) = E((X-\mu_X)^2) = E(X^2) - (E(X))^2$$
+
+> Note:  
+> $$E(X^n) = \int_{-\infty}^{\infty}x^n\cdot f_X(x)dx$$
+
+The variance is the ***mean squared deviation*** of random variable form its own mean.
+
+- If X has *high variance* values of X are scttered long way from mean.
+- If X has *low variance* values of X are tightly clusterd around the mean.
+  
+### Covariance
+
+Covariance is a measure of he associtaion or the dependence two random variables X and Y. Covariance can either be positive or negative.
+
+> Note: Variance is always positive.
+
+*Defination*: Let X and Y be random varibles. The **covariance** between X and Y are given by
+
+$$cov(X,Y) = E\bigg\{(X-\mu_X)(Y-\mu_Y)\bigg\}; \mu_X = E(X), \mu_Y = E(Y)$$
+
+1. if **cov(X,Y)** is `positive` then large values of X tend to occur with large values of Y, and smaill values of X tend to occur with small values of Y.
+
+2. if **cov(X,Y)** is `negative` then large values fo X tend to occur with small values of Y, adn small values of X tend to occur with large values of Y.
+
+3. If X and Y are independent  there is no pattern between large values of X and large values of Y, so cov(X,Y) = 0. However, cov(X,Y) = 0 deos not imply that X and Y are independent, unsless X and Y are Noramlly distributed.
+
+### Properties of variance
+
+1. Let g be a function, and let a and b be constants. For any random variable X(discrete or continuous), 
+
+$$Var(a\cdot g(X)+b) = a^2Var(g(X))$$
+
+In particular:
+
+$$Var(a\cdot X+b) = a^2Var(X)$$
+
+2. If X and Y are `independent` random variables. Then,
+
+$$Var(X+Y) = Var(X)+Var(Y)$$
+
+3. If X and Y are `NOT independent` random variables, then,
+
+$$Var(X+Y) = Var(X)+Var(Y)+2cov(X,Y)$$
 
 
