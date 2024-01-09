@@ -1,11 +1,10 @@
 
-
-
 # DS and AI
 
 - [Gate Syllabus](https://gate2024.iisc.ac.in/wp-content/uploads/2023/08/GATE2024DataScienceAIsyllabus.pdf)
 
 Topics:
+
 - [Probability](#probability)
 - [Statistics](#statistics)
 
@@ -16,22 +15,21 @@ Topics:
 To calculate permutations and combinations, you can use the following formulas:
 
 - Permutations: The number of ways to arrange a set of objects in a specific order.
-    - Formula:  
-    - $$nPr = \frac{n!}{(n-r)!}$$
-    - Example: If you have 5 objects and you want to arrange them in groups of 3, the number of permutations would be $(5P3 = \frac{5!}{(5 - 3)!} = 60)$.
+  - Formula:  
+  - $$nPr = \frac{n!}{(n-r)!}$$
+  - Example: If you have 5 objects and you want to arrange them in groups of 3, the number of permutations would be $(5P3 = \frac{5!}{(5 - 3)!} = 60)$.
 
 - Combinations: The number of ways to select a subset of objects from a larger set, without considering the order.
-    - Formula: 
-    - $$ nCr = \frac{n!}{r! \cdot (n-r)!}
-    - Example: If you have 5 objects and you want to select 3 of them, the number of combinations would be $(5C3 = \frac{5!}{3! \cdot (5 - 3)!} = 10)$.
-
+  - Formula:
+  - $$ nCr = \frac{n!}{r! \cdot (n-r)!}
+  - Example: If you have 5 objects and you want to select 3 of them, the number of combinations would be $(5C3 = \frac{5!}{3! \cdot (5 - 3)!} = 10)$.
 
 ### Probability Axioms
 
- - **Defination**: we define probability as a **`set function`** with values in $[1,2]$, which stisfies the following `axioms`:
+- **Defination**: we define probability as a **`set function`** with values in $[1,2]$, which stisfies the following `axioms`:
 
     1. The probablity of event **A** in sample space **S** is a non-negative real number.
-        
+
         $$P(A) \geq 0\text{, for every event }A \subset S$$
 
     2. Probability of Sample Space is !:
@@ -55,6 +53,7 @@ To calculate permutations and combinations, you can use the following formulas:
 #### Theorem 1 (Probability of Empty Set): *Probability of an Empty Set is 0*
 
 $$P(\emptyset) = 0$$
+
 ---
 
 #### Theorem 2 (The addition law of probability): *if $A_1,A_2,...$ are mutually exclusive events, then probability of their union is sum of their probabilities, i.e.*
@@ -92,13 +91,13 @@ $$
     P(A^c\cap B^c) = P((A\cup B)^c) = 1 - P(A\cup B)
 $$
 
+#### Conditional Probability
 
-#### Conditional Probability:
 **let A and B be two events, then probability of event A given event B is denoted by $P(A | B)$ :**
 
 $$P(A|B) = \frac{P(A\cap B)}{P(B)},\text{ for }P(B) > 0$$
 
-#### Independence:
+#### Independence
 
 Two events A and B are independent if occurence of one event has no effect on the probability of other event. Thus,
 
@@ -107,13 +106,12 @@ $$ P(A|B) = P(A) $$
 equivalently,
 $$ P(B|A) = P(B) $$
 
-*`Derivation`* 
+*`Derivation`*
 
 $$ P(A|B) = P(A)$$
 $$P(A|B) = \frac{P(A\cap B)}{P(B)}$$
 $$P(A) = \frac{P(A\cap B)}{P(B)}$$
 $$P(A\cap B)= P(A)*P(B)$$
-
 
 #### Total Probabilities
 
@@ -133,7 +131,6 @@ $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i) P(B_i)}$$
 >Note: this implies
 >$$P(A|B) P(B) = P(B|A) P(A)$$
 
-
 ## Statistics
 
 ### Expectation and variance
@@ -151,7 +148,6 @@ $$E(X) = \int_{-\infty}^{\infty}x.f_X(x)dx$$
 *Defination for discrete*: Let X be **`discrete`** random variable with probability function $f_X(x)$. The expected value of X is:
 
 $$E(X) = \sum_x xf_X(x) = \sum_xxP(X=x)$$
-
 
 > Similarly `Expectation of g(X)` we define `E(g(x))` <br>
 > Continuous:
@@ -189,4 +185,24 @@ $$E(XY) = E(X)E(Y)$$
 $$E(g(X)h(Y)) = E(g(X))E(h(Y))$$
 
 > Note: if X and Y are independent, then $E(XY)=E(X)E(Y)$ is true. However converse is not generally true: it is possible that $E(XY)=E(X)E(Y)$ eventhough X and Y are dependent.
+
+#### Probability as an Expectation
+
+Let A be any event, we can write P(A) as an expectation as follows.
+
+Define indeicator function:
+
+$$I_A = \begin{cases}
+   1 &\text{if event A occurs} \\
+   0 &\text{otherwise } 
+\end{cases}$$
+
+Then $I_A$ is a random variable, and 
+
+$$E(I_A) = \sum_{r=0}^{1}rP(I_A = r) \\= 0 * P(I_A = 0) + 1 * P(I_A = 1) \\= P(I_A = 1) = P(A)
+$$
+
+Therefore,
+
+$$P(A) = E[I_A]$$
 
