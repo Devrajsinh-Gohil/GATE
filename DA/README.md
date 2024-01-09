@@ -131,11 +131,11 @@ $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i) P(B_i)}$$
 >Note: this implies
 >$$P(A|B) P(B) = P(B|A) P(A)$$
 
-#Statistics
+# Statistics
 
-# Expectation and variance
+## Expectation and variance
 
-## Expectaions
+### Expectaions
 
 The **mean**, **expected value** or **expectation** of a random variable X is written as E(X) or $\mu_x$. If we observe N random values of X, then mean of N values will be approximately equal to E(X) for large N.
 
@@ -234,7 +234,7 @@ Covariance is a measure of he associtaion or the dependence two random variables
 
 *Defination*: Let X and Y be random varibles. The **covariance** between X and Y are given by
 
-$$cov(X,Y) = E\bigg\{(X-\mu_X)(Y-\mu_Y)\bigg\}; \mu_X = E(X), \mu_Y = E(Y)$$
+$$cov(X,Y) = E\{(X-\mu_X)(Y-\mu_Y)\}; \mu_X = E(X), \mu_Y = E(Y)$$
 
 1. if **cov(X,Y)** is `positive` then large values of X tend to occur with large values of Y, and smaill values of X tend to occur with small values of Y.
 
@@ -260,4 +260,41 @@ $$Var(X+Y) = Var(X)+Var(Y)$$
 
 $$Var(X+Y) = Var(X)+Var(Y)+2cov(X,Y)$$
 
+### Correlation
 
+The correalation coefficient of X and Y is a liner measure of association between X and Y. It is given by covariance, scaled by the overall variability in X and Y. As a result, correaltion coefficient is always between -1 and +1, so it ias easily compmared for different quantities.
+
+>Note: Has same sign as that of covariance.
+
+*Defination*: The `correlation` between X and Y, also called `correlation coefficient`, is given by
+
+$$corr(X,Y) = \frac{cov(X,Y)}{\sqrt{Var(X)Var(Y)}}$$
+
+The correlation is $\pm 1$ only if there is a perfect linear relationship between X and Y, i.e. $corr(X,Y)=1 \Longleftrightarrow Y = aX + b$
+
+### Conditional expectation and conditional variance
+
+*Defination*: Let X and Y be discrete random variables. the **condtional probability function** of X, given that Y = y, is:
+
+$$P(X=x|Y=y) = \frac{P(X=x \text{ AND } Y=y)}{P(Y=y)} $$
+
+we write conditional probability function as:
+
+$$f_{X|Y}(x|y) = P(X=x|Y=y)$$
+
+> Note: The conditional probabilities $f_{X|Y}(x|y)$ sum to 1, just like any other probability function: 
+> $$\sum_x P(X=x|Y=y) = \sum_x P_{\{Y=y\}}(X=x) = 1$$
+
+#### Condtional Expectation
+
+*Defination*: Let X and Y be discrete random variables. The **conditional expectation of X, given that Y=y**, is:
+
+$$\mu_{X|Y = y} = E(X|Y = y) = \sum_x xf_{X|Y}(x|y)$$
+
+E(X|Y = y) is the mean of the value X, when Y is fixed at y.
+
+#### Conditional Variance
+
+*Defination*: Let X and Y be discrete random variables. The **conditional variance of X, given that Y=y**, is:
+
+$$Var(X|Y) = E(X^2|Y) - \{E(X|Y)\}^2 = E\{(X-\mu_{X|Y})^2|Y\}$$
