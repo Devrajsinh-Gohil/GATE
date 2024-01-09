@@ -171,4 +171,22 @@ approaches to expectation E(XY).
 
 #### Properties of Expectation
 
-To Be Continued......
+1. Let g and h be functions and, let a anb b be constants. For any random vriable X (discrete or continuous):
+
+$$E\{ag(X)+bh(X)\} = aE\{g(X)\} + bE\{h(X)\}$$
+
+In particular:
+
+$$E(aX+b)= aE(X) + b$$
+
+2. Let X and Y be any random variables (disrete, continuous,independent, or non-independent). Then
+
+$$E(X+Y) = E(X) + E(Y)$$
+
+3. Let X and Y be `independent` random variables, and g anh be functions. Then
+
+$$E(XY) = E(X)E(Y)$$
+$$E(g(X)h(Y)) = E(g(X))E(h(Y))$$
+
+> Note: if X and Y are independent, then $E(XY)=E(X)E(Y)$ is true. However converse is not generally true: it is possible that $E(XY)=E(X)E(Y)$ eventhough X and Y are dependent.
+
