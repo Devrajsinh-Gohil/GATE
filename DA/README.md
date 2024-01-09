@@ -169,7 +169,7 @@ approaches to expectation E(XY).
 
 1. Let g and h be functions and, let a anb b be constants. For any random vriable X (discrete or continuous):
 
-$$E\{ag(X)+bh(X)\} = aE\{g(X)\} + bE\{h(X)\}$$
+$$E[ag(X)+bh(X)] = aE[g(X)]+ bE[h(X)]$$
 
 In particular:
 
