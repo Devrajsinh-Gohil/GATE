@@ -26,6 +26,8 @@ To calculate permutations and combinations, you can use the following formulas:
 
 ### Probability Axioms
 
+### [Reference](https://bookdown.org/tara_manon/MF_book/axioms.html)
+
 - **Defination**: we define probability as a **`set function`** with values in $[1,2]$, which stisfies the following `axioms`:
 
     1. The probablity of event **A** in sample space **S** is a non-negative real number.
@@ -134,6 +136,8 @@ $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum_{i=1}^{n}P(A|B_i) P(B_i)}$$
 # Statistics
 
 ## Expectation and variance
+
+### [Reference](https://www.stat.auckland.ac.nz/~fewster/325/notes/ch3.pdf)
 
 ### Expectaions
 
@@ -298,3 +302,19 @@ E(X|Y = y) is the mean of the value X, when Y is fixed at y.
 *Defination*: Let X and Y be discrete random variables. The **conditional variance of X, given that Y=y**, is:
 
 $$Var(X|Y) = E(X^2|Y) - \{E(X|Y)\}^2 = E\{(X-\mu_{X|Y})^2|Y\}$$
+
+### Standard Deviation
+
+*Defination*: it is square root of `Varaince`, denoted bt $\sigma$
+
+$$\sigma = \sqrt{Var}$$
+
+### The total law of expectation and variance:
+
+1. ***Law of Total Expectation:***
+
+$$E(X) = E_Y(E(X|Y))$$
+
+2. ***Law of Total Variance:***
+
+$$Var(X) = E_Y(Var(X|Y)) + Var_Y(E(X|Y))$$
