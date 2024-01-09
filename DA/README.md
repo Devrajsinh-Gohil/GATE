@@ -199,10 +199,12 @@ $$I_A = \begin{cases}
 
 Then $I_A$ is a random variable, and 
 
-$$E(I_A) = \sum_{r=0}^{1}rP(I_A = r) \\= 0 * P(I_A = 0) + 1 * P(I_A = 1) \\= P(I_A = 1) = P(A)
+$$E(I_A) = \sum_{r=0}^{1}rP(I_A = r) \\ = 0 * P(I_A = 0) + 1 * P(I_A = 1) = P(I_A = 1) = P(A)
 $$
 
 Therefore,
 
-$$P(A) = E[I_A]$$
+$P(A) = E[I_A]$ for any event A
+
+
 
