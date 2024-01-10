@@ -318,3 +318,29 @@ $$E(X) = E_Y(E(X|Y))$$
 2. ***Law of Total Variance:***
 
 $$Var(X) = E_Y(Var(X|Y)) + Var_Y(E(X|Y))$$
+
+## Distributions:
+### [Reference](https://drive.google.com/file/d/1aoUqLYWbZORrzv-iI9rkfuQ4K1dt2ZSD/view?usp=sharing)
+### [Reference Table](https://drive.google.com/file/d/12gl72N1Bs8o7Rfz9IosQ68PU2Vohz2NJ/view?usp=sharing)
+
+
+
+
+# Calculus and Optimiztiion
+
+## Functons of a single variable
+
+**Defination 1.** 
+
+*A function f from a set A to a set B is a rule that assigns to each element x in A one and only one element y in B.We denote it by f :A→B.*
+
+
+The set A is called the `domain` of the function f. The elements y in B, called the values of f at x is denoted by f(x). The set of all values y = f(x), as x varies over the domain of f is called the `range` of f.
+
+
+
+- Finding Domain of a function
+  - If the domain of the function f is not specifically mentioned, we will adopt the convention that the domain of f is the set of all numbers x for which f(x) is a real number.
+- Finding Ranfe of a function
+  - Invert the function and find the range w.r.t x.
+
