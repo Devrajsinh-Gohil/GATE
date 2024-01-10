@@ -343,4 +343,18 @@ The set A is called the `domain` of the function f. The elements y in B, called 
   - If the domain of the function f is not specifically mentioned, we will adopt the convention that the domain of f is the set of all numbers x for which f(x) is a real number.
 - Finding Ranfe of a function
   - Invert the function and find the range w.r.t x.
+- Vertical line test
+  - A curve in the xy-plane is the graph of a function f defined by the equation y = f (x) if and only if the no vertical line intersect the curve at more than one point.
+- Odd and Even functions
+  - A function f that satisfies f(−x) = f(x) for every x in its do- main is called an even function. The graph of an even function is symmetric with respect to the x-axis. An example of an even function is $f(x) = (x)^2$.
+  - A function f that satisfies f (−x) = −f (x) for every x in its domain is called an odd func- tion. The graph of an odd function is symmetric with respect to the origin. An example of an odd function is $f(x) = (x)^3$.
+- Operations on Function
+  - Let f and g be functions with domains A and B, respectively. Then their sum f+g, difference f−g, product fg,and quotient f/g are defined as follows:
+    - (f+g)(x) = f(x) + g(x), with domain = A ∩ B
+    - (f−g)(x) = f(x) − g(x), with domain = A ∩ B
+    - (fg)(x) = f(x) . g(x), with domain = A ∩ B
+    - ($\frac{f}{g}$)(x)= $\frac{f(x)}{g(x)}$, with domain ={ x| x ∈ A ∩ B and g(x) $\neq$ 0}
 
+## Function transformations
+
+- 
