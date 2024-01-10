@@ -360,9 +360,24 @@ The set A is called the `domain` of the function f. The elements y in B, called 
 - Vertical Transformation:
   - The graph of the function defined by g(x) = f(x) + c , where c is a positive constant, is obtained by shifting the graph of f vertically upward by c units. Similarly, the graph of the function defined by g(x) = f(x) − c , where c is a positive constant, is obtained by shifting the graph of f vertically downward by c units.
   
-![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/Screenshot%202024-01-11%20at%2012.40.59%E2%80%AFAM.png)
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/vt.png)
 
 - Horizontal Transformation
   - The graph of the function defined by g(x) = f (x + c) , where c is a positive constant, is obtained by shifting the graph of f horizontally to the left by c units. Similarly, the graph of the function defined by g(x) = f (x − c) , where c is a positive constant, is obtained by shifting the graph of f horizontally to the right by c units.
 
-![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/Screenshot%202024-01-11%20at%2012.40.59%E2%80%AFAM.png)
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/ht.png)
+
+- Vertical Streching and Compressing
+  - The graph of the function defined by g(x) = cf(x), where c is a constant with c > 1, is obtained from the graph of f by stretching the latter vertically by a factor of c. Similarly, if 0 < c < 1, then the graph of g is obtained from f by compressing the latter vertically by a factor of 1/c.
+
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/vsc.png)
+
+- Horizontal Streching and Compressing
+  -  The graph of the function defined by g(x) = f (cx) , where c is a constant with 0 < c < 1, is obtained from the graph of f by stretching the graph of the latter horizontally by a factor of 1/c. Similarly if c > 1 , then the graph of g is obtained by compressing the graph of f horizontally by a factor of c.
+
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/hsc.png)
+
+- Reflection
+  -  The graph of the function defined by g(x) = −f(x) is obtained by reflecting the graph of f with respect to the x-axis. The graph of g(x) = f(−x) is obtained by reflecting the graph of f with respect to the y-axis.
+
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/r.png)
