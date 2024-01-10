@@ -359,4 +359,10 @@ The set A is called the `domain` of the function f. The elements y in B, called 
 
 - Vertical Transformation:
   - The graph of the function defined by g(x) = f(x) + c , where c is a positive constant, is obtained by shifting the graph of f vertically upward by c units. Similarly, the graph of the function defined by g(x) = f(x) − c , where c is a positive constant, is obtained by shifting the graph of f vertically downward by c units.
-![img](https://drive.google.com/file/d/1t3EfRWTsi3I1x9cLcoIZZEg8wjUtUZEx/view?usp=sharing)
+  
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/Screenshot%202024-01-11%20at%2012.40.59%E2%80%AFAM.png)
+
+- Horizontal Transformation
+  - The graph of the function defined by g(x) = f (x + c) , where c is a positive constant, is obtained by shifting the graph of f horizontally to the left by c units. Similarly, the graph of the function defined by g(x) = f (x − c) , where c is a positive constant, is obtained by shifting the graph of f horizontally to the right by c units.
+
+![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/Screenshot%202024-01-11%20at%2012.40.59%E2%80%AFAM.png)
