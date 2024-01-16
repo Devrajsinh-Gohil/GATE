@@ -6,7 +6,7 @@ Topics:
 
 - [Probability](#probability)
 - [Statistics](#statistics)
-- [Calculus & Optimization](#calculus&optimization)
+- [Calculus & Optimization](#calculusandoptimization)
 
 # Probability
 
