@@ -342,7 +342,7 @@ The set A is called the `domain` of the function f. The elements y in B, called 
 
 - Finding Domain of a function
   - If the domain of the function f is not specifically mentioned, we will adopt the convention that the domain of f is the set of all numbers x for which f(x) is a real number.
-- Finding Ranfe of a function
+- Finding Range of a function
   - Invert the function and find the range w.r.t x.
 - Vertical line test
   - A curve in the xy-plane is the graph of a function f defined by the equation y = f (x) if and only if the no vertical line intersect the curve at more than one point.
@@ -356,7 +356,11 @@ The set A is called the `domain` of the function f. The elements y in B, called 
     - (fg)(x) = f(x) . g(x), with domain = A ∩ B
     - ($\frac{f}{g}$)(x)= $\frac{f(x)}{g(x)}$, with domain ={ x| x ∈ A ∩ B and g(x) $\neq$ 0}
 
-## Function transformations
+### Composite function
+
+$(f\cdot g)(x) = f(g(x))$
+
+### Function transformations
 
 - Vertical Transformation:
   - The graph of the function defined by g(x) = f(x) + c , where c is a positive constant, is obtained by shifting the graph of f vertically upward by c units. Similarly, the graph of the function defined by g(x) = f(x) − c , where c is a positive constant, is obtained by shifting the graph of f vertically downward by c units.
@@ -382,3 +386,36 @@ The set A is called the `domain` of the function f. The elements y in B, called 
   -  The graph of the function defined by g(x) = −f(x) is obtained by reflecting the graph of f with respect to the x-axis. The graph of g(x) = f(−x) is obtained by reflecting the graph of f with respect to the y-axis.
 
 ![img](https://raw.githubusercontent.com/Devrajsinh-Gohil/GATE/main/img/r.png)
+
+
+## Limit
+
+*Defination*: Let f(x) be be defined on an open interval 'a' except possiblity at 'a' itself. if f(x) get arbitarily close to L (a finite number) for all x sufficiently close to 'a' we say that f(x) approaches to limit L as x approaches to 'a' and we write
+
+$$\lim_{x→a}f(x) = L$$
+
+and say "the limit of f(x), as x approaches a, equals L"
+
+### Left and Right hand limit of a function
+
+Left hand limit (LHL) = 
+$$\lim_{x\rarr a^-} f(x) = \lim_{h\rarr 0} f(a-h), h > 0$$
+
+Right hand limit (RHL) = 
+$$\lim_{x\rarr a^+} f(x) = \lim_{h\rarr 0} f(a+h), h > 0$$
+
+> Note: 
+> - limit of function is said to exist when LHL = RHL = finite and fixed quantity.
+> - In $\lim_{x\rarr a}f(x), x\rarr a$ necessarily implies $x\not ={a}$
+
+### Fundamental Theorems
+
+Let $\lim_{x\rarr a} f(x) = l \text{ and } lim_{x\rarr a}g(x) = m$ it l and m exists then:
+
+- Sum rule: $\lim_{x\rarr a}[f(x) + g(x)] = l + m$
+- Difference rule : $\lim_{x\rarr a}[f(x) - g(x)] = l - m$
+- Product rule: $$\lim_{x\rarr a}f(x) \cdot g(x) = l \cdot m$$
+- Quotient rule: $\lim_{x\rarr a}\frac{f(x)}{g(x)}= \frac{l}{m}$ provided $m\not = 0$
+- Constant multiple rule: $\lim_{x\rarr a}kf(x) = k\lim_{x\rarr a}f(x)$, where k is a constant.
+- Power rule: $\lim_{x\rarr a}f(x) ^{g(x)} = l ^ m$ provided l > 0.
+- $\lim_{x\rarr a}f[g(x)] = f\big(\lim_{x\rarr a}g(x)\big) = f(m)$; provided f(x) is continuous at x =m.
