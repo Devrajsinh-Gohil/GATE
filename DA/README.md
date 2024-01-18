@@ -399,26 +399,26 @@ and say "the limit of f(x), as x approaches a, equals L"
 ### Left and Right hand limit of a function
 
 Left hand limit (LHL) = 
-$$\lim_{x\rarr a^-} f(x) = \lim_{h\rarr 0} f(a-h), h > 0$$
+$$\lim_{x\rightarrow a^-} f(x) = \lim_{h\rightarrow 0} f(a-h), h > 0$$
 
 Right hand limit (RHL) = 
-$$\lim_{x\rarr a^+} f(x) = \lim_{h\rarr 0} f(a+h), h > 0$$
+$$\lim_{x\rightarrow a^+} f(x) = \lim_{h\rightarrow 0} f(a+h), h > 0$$
 
 > Note: 
 > - limit of function is said to exist when LHL = RHL = finite and fixed quantity.
-> - In $\lim_{x\rarr a}f(x), x\rarr a$ necessarily implies $x\not ={a}$
+> - In $\lim_{x\rightarrow a}f(x), x\rightarrow a$ necessarily implies $x\not ={a}$
 
 ### Fundamental Theorems
 
-Let $\lim_{x\rarr a} f(x) = l \text{ and } lim_{x\rarr a}g(x) = m$ it l and m exists then:
+Let $\lim_{x\rightarrow a} f(x) = l \text{ and } lim_{x\rightarrow a}g(x) = m$ it l and m exists then:
 
-- Sum rule: $\lim_{x\rarr a}[f(x) + g(x)] = l + m$
-- Difference rule : $\lim_{x\rarr a}[f(x) - g(x)] = l - m$
-- Product rule: $$\lim_{x\rarr a}f(x) \cdot g(x) = l \cdot m$$
-- Quotient rule: $\lim_{x\rarr a}\frac{f(x)}{g(x)}= \frac{l}{m}$ provided $m\not = 0$
-- Constant multiple rule: $\lim_{x\rarr a}kf(x) = k\lim_{x\rarr a}f(x)$, where k is a constant.
-- Power rule: $\lim_{x\rarr a}f(x) ^{g(x)} = l ^ m$ provided l > 0.
-- $\lim_{x\rarr a}f[g(x)] = f\big(\lim_{x\rarr a}g(x)\big) = f(m)$; provided f(x) is continuous at x =m.
+- Sum rule: $\lim_{x\rightarrow a}[f(x) + g(x)] = l + m$
+- Difference rule : $\lim_{x\rightarrow a}[f(x) - g(x)] = l - m$
+- Product rule: $$\lim_{x\rightarrow a}f(x) \cdot g(x) = l \cdot m$$
+- Quotient rule: $\lim_{x\rightarrow a}\frac{f(x)}{g(x)}= \frac{l}{m}$ provided $m\not = 0$
+- Constant multiple rule: $\lim_{x\rightarrow a}kf(x) = k\lim_{x\rightarrow a}f(x)$, where k is a constant.
+- Power rule: $\lim_{x\rightarrow a}f(x) ^{g(x)} = l ^ m$ provided l > 0.
+- $\lim_{x\rightarrow a}f[g(x)] = f\big(\lim_{x\rightarrow a}g(x)\big) = f(m)$; provided f(x) is continuous at x =m.
   
 ### Indeterminate forms
 
@@ -433,17 +433,17 @@ Important factors:
 - $$x^n+a^n = (x+a)(x^{n-1} - ax^{n-2} + ... + a^{n-1}), \text{n is odd}$$
 
 > **Note**: 
-> $$\lim_{x\rarr a} \frac{x^n-a^n}{x-a} = na^{n-1}$$
+> $$\lim_{x\rightarrow a} \frac{x^n-a^n}{x-a} = na^{n-1}$$
 
 #### Rationalization or double rationalization
 
 In this method we rationalize the factor containing square root and simplify
 
-#### Limit when $x \rarr \infty$
+#### Limit when $x \rightarrow \infty$
 
 - divide the greatest power of x in numerator and denominator
-- put x = 1/y and apply $y\rarr 0$
+- put x = 1/y and apply $y\rightarrow 0$
 
 #### Sandwich Theorem
 
-if $f(x) \leq g(x) \leq h(x); \forall x$ and $\lim_{x\rarr a}f(x) = l = \lim_{x\rarr a}h(x)$ then $\lim_{x\rarr a}g(x) = l$ 
+if $f(x) \leq g(x) \leq h(x); \forall x$ and $\lim_{x\rightarrow a}f(x) = l = \lim_{x\rightarrow a}h(x)$ then $\lim_{x\rightarrow a}g(x) = l$ 
