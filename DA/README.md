@@ -419,3 +419,31 @@ Let $\lim_{x\rarr a} f(x) = l \text{ and } lim_{x\rarr a}g(x) = m$ it l and m ex
 - Constant multiple rule: $\lim_{x\rarr a}kf(x) = k\lim_{x\rarr a}f(x)$, where k is a constant.
 - Power rule: $\lim_{x\rarr a}f(x) ^{g(x)} = l ^ m$ provided l > 0.
 - $\lim_{x\rarr a}f[g(x)] = f\big(\lim_{x\rarr a}g(x)\big) = f(m)$; provided f(x) is continuous at x =m.
+  
+### Indeterminate forms
+
+$\frac{0}{0}$, $\frac{\infty}{\infty}$, $\infty - \infty$, $0\cdot \infty$, $1^\infty$, $0^0$, $\infty^0$
+
+### General method to solve limits
+
+#### Factorization
+
+Important factors:
+- $$x^n-a^n = (x-a)(x^{n-1} + ax^{n-2} + ... + a^{n-1}), n \in N$$
+- $$x^n+a^n = (x+a)(x^{n-1} - ax^{n-2} + ... + a^{n-1}), \text{n is odd}$$
+
+> **Note**: 
+> $$\lim_{x\rarr a} \frac{x^n-a^n}{x-a} = na^{n-1}$$
+
+#### Rationalization or double rationalization
+
+In this method we rationalize the factor containing square root and simplify
+
+#### Limit when $x \rarr \infty$
+
+- divide the greatest power of x in numerator and denominator
+- put x = 1/y and apply $y\rarr 0$
+
+#### Sandwich Theorem
+
+if $f(x) \leq g(x) \leq h(x); \forall x$ and $\lim_{x\rarr a}f(x) = l = \lim_{x\rarr a}h(x)$ then $\lim_{x\rarr a}g(x) = l$ 
